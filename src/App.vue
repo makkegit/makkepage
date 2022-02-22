@@ -17,8 +17,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <HelloWorld :msg="$t('me')" />
 
       <nav>
-        <RouterLink to="/">{{$t("me")}}</RouterLink>
-        <RouterLink to="/about">{{$t("projects")}}</RouterLink>
+        <RouterLink to="/">{{ $t("me") }}</RouterLink>
+        <RouterLink to="/about">{{ $t("projects") }}</RouterLink>
       </nav>
     </div>
   </header>

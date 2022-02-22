@@ -3,7 +3,7 @@
     <i>
       <slot name="icon"></slot>
     </i>
-    <div class="details">
+    <div class="description">
       <h3>
         <slot name="heading"></slot>
       </h3>
@@ -18,7 +18,7 @@
   display: flex;
 }
 
-.details {
+.description {
   flex: 1;
   margin-left: 1rem;
 }
