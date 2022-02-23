@@ -3,18 +3,7 @@ import TheWelcome from "@/components/TheWelcome.vue";
 </script>
 
 <template>
-<div class="projects"></div>
   <main>
     <TheWelcome />
   </main>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

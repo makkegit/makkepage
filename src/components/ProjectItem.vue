@@ -1,13 +1,31 @@
+<script setup lang="ts">
+import type { Project } from '@/utils/Project';
+
+defineProps<{
+  project: Project;
+}>();
+</script>
 <template>
   <div class="item">
     <i>
       <slot name="icon"></slot>
     </i>
     <div class="description">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+      <h3>{{ project.name }}</h3>
+      <slot>{{ project.description }}</slot>
+      <br />
+      <a :href="project.link" target="_blank">Link to Github.</a>
+      <br />
+      <div class="logo_list">
+        <template v-for="logo in project.stack">
+          <img
+            v-bind:src="logo.logo"
+            height="35"
+            width="35"
+            v-bind:style="{ 'margin-right': 5 + 'px' }"
+          />
+        </template>
+      </div>
     </div>
   </div>
 </template>

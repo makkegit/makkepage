@@ -4,6 +4,7 @@ export enum CodeLanguages
     CPP = "C++",
     CSHARP = "C#",
     REACT = "React.js",
+    TYPESCRIPT = "TypeScript",
     VUE = "Vue.js",
 }
 
@@ -13,7 +14,8 @@ export enum CodeImages
     CPP = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     CSHARP = "image_C#",
     REACT = "image_React.js",
-    VUE = "image_Vue.js",
+    TYPESCRIPT = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    VUE = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg",
 }
 
 // export const CODELANGUAGES = [
