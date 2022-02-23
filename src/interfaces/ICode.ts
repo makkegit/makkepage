@@ -1,4 +1,6 @@
+import type { CodeLanguages, CodeImages } from "../utils/CodeLangs"
+
 export interface ICode {
-  name: string;
-  logo: string;
+  name: CodeLanguages;
+  logo: CodeImages;
 }

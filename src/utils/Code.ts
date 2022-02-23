@@ -1,9 +1,10 @@
 import type { ICode } from "@/interfaces/ICode";
+import type { CodeLanguages, CodeImages } from "./CodeLangs"
 
 export class Code implements ICode {
-  name: string;
-  logo: string;
-  constructor(codeName: string, codeLogo: string) {
+  name: CodeLanguages;
+  logo: CodeImages;
+  constructor(codeName: CodeLanguages, codeLogo: CodeImages) {
     this.name = codeName;
     this.logo = codeLogo;
   }

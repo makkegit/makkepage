@@ -6,11 +6,11 @@ import HelloWorld from "@/components/HelloWorld.vue";
 <template>
   <header>
     <img
-      alt="Vue logo"
+      alt="itsme"
       class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
+      src="@/assets/meika.svg"
+      width="250"
+      height="250"
     />
 
     <div class="wrapper">
@@ -18,7 +18,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 
       <nav>
         <RouterLink to="/">{{ $t("me") }}</RouterLink>
-        <RouterLink to="/about">{{ $t("projects") }}</RouterLink>
+        <RouterLink to="/projects">{{ $t("projects") }}</RouterLink>
       </nav>
     </div>
   </header>

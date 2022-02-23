@@ -16,6 +16,11 @@ import { PROJECT1 } from "../utils/Projects"
     <template #heading>{{PROJECT1.name}}</template>
     {{$t(PROJECT1.description)}}
     <a :href="PROJECT1.link" target="_blank">Project link on Github</a>.
+    <div class="logo_list">
+    <template v-for="logo in PROJECT1.stack">
+    <img v-bind:src="logo.logo" height="35" width="35" v-bind:style="{ 'margin-right': 5 + 'px' }"/>
+    </template>
+    </div>
   </ProjectItem>
 
   <ProjectItem>
