@@ -1,19 +1,21 @@
+<script setup lang="ts">
+import { openWindow } from "@/utils/UtilFunctions" 
+</script>
+
 <template>
 <div class="sticky-media-bar">
   <div class="social-container">
-    <div class="icons github">
+    <div class="icons github" v-on:click="openWindow('https://github.com/makkegit')">
       <a
         class="gh"
-        href="https://github.com/makkegit"
         aria-label="Github - Markus Hakala"
       >
         <i class="fa fa-github"></i>
       </a>
     </div>
-    <div class="icons linkedin">
+    <div class="icons linkedin" v-on:click="openWindow('https://www.linkedin.com/in/makkein')">
       <a
         class="li"
-        href="https://www.linkedin.com/in/makkein"
         aria-label="Linkedin - Markus Hakala"
       >
         <i class="fa fa-linkedin"></i>
