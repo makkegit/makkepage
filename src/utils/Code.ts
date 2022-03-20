@@ -1,5 +1,5 @@
 import type { ICode } from "@/interfaces/ICode";
-import type { CodeLanguages, CodeImages } from "./CodeLangs"
+import type { CodeLanguages, CodeImages } from "./CodeLangs";
 
 export class Code implements ICode {
   name: CodeLanguages;

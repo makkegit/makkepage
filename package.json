@@ -11,7 +11,9 @@
   "dependencies": {
     "vue": "^3.2.29",
     "vue-i18n": "^9.1.9",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vuesax": "^3.12.2",
+    "vuesax3": "^4.0.15"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

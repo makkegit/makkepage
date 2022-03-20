@@ -1,6 +1,11 @@
 {
     "me": "Meikä",
+    "me_name": "Markus Hakala",
+    "me_desc": "ATK ohjelmistokehittäjä",
+    "quotes": ["Keittää tosi hyvää kahvia! ☕", "Mitä vit..? Aa, sä teit sen noin. Eiku..", "En oo kyllä tällaista koodia ennen nähnyt.", "Parenmpaa tiimiläistä ei voi kyllä hakea!"],
+    "rndName": ["M. Meikäläinen", "K. Koodari", "T. Tiimiläinen", "A. Asiakas", "E. Esihenkilö"],
+    "rndTitle": ["Parempi koodari", "Koodari", "Ohjelmistokehittäjä", "Tosi pitkä ja hieno titteli"],
     "projects": "Projektit",
-    "p1_desc": "Project 1 esittely suomeksi"
-
+    "p1_desc": "Simppeli wifi palvelin käytettäväksi lokaalisti. Toteutuksessa hyödynnetty komponenttikirjastojen esimerkkisovelluksia.",
+    "p2_desc": "Tämä sivu! Rakennettu Vue.js + Router mallia hyödyntäen. Sivulla myös kielituki i18n -viitekehyksen avulla"
 }

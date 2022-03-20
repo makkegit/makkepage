@@ -1,29 +1,22 @@
 <script setup lang="ts">
-import type { Project } from '@/utils/Project';
+import type { Project } from "@/utils/Project";
+import { openWindow } from "@/utils/UtilFunctions" 
 
 defineProps<{
   project: Project;
 }>();
 </script>
 <template>
-  <div class="item">
+  <div class="item" v-on:click="openWindow(project.link)" style="cursor: pointer;" >
     <i>
       <slot name="icon"></slot>
     </i>
     <div class="description">
       <h3>{{ project.name }}</h3>
-      <slot>{{ project.description }}</slot>
-      <br />
-      <a :href="project.link" target="_blank">Link to Github.</a>
-      <br />
+      <slot>{{ $t(project.description) }}</slot>
       <div class="logo_list">
-        <template v-for="logo in project.stack">
-          <img
-            v-bind:src="logo.logo"
-            height="35"
-            width="35"
-            v-bind:style="{ 'margin-right': 5 + 'px' }"
-          />
+        <template v-for="logo in project.stack" :key="logo">
+          <img class="img" v-bind:src="logo.logo" height="35" width="35" />
         </template>
       </div>
     </div>
@@ -101,4 +94,49 @@ h3 {
     display: none;
   }
 }
+
+@media (orientation: landscape) {
+  .item {
+    margin: 0 auto;
+    padding: 0.4rem 0 2rem calc(var(--section-gap) / 2);
+  }
+
+  i {
+    top: calc(50% - 25px);
+    left: -26px;
+    position: absolute;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .item:before {
+    content: " ";
+    border-left: 1px solid var(--color-border);
+    position: absolute;
+    left: 0;
+    bottom: calc(50% + 25px);
+    height: calc(50% - 25px);
+  }
+
+  .item:after {
+    content: " ";
+    border-left: 1px solid var(--color-border);
+    position: absolute;
+    left: 0;
+    top: calc(50% + 25px);
+    height: calc(50% - 25px);
+  }
+
+  .item:first-of-type:before {
+    display: none;
+  }
+
+  .item:last-of-type:after {
+    display: none;
+  }
+}
 </style>
+
