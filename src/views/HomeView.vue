@@ -3,14 +3,13 @@ let nbr = Math.floor(Math.random() * 2);
 </script>
 <template>
   <div class="itsme">
-    <div class="quotes">"{{ $t("quotes["+ nbr +"]") }}"</div>
-    <div class="rndName">- {{ $t("rndName["+ nbr +"]") }}</div>
-    <div class="rndTitle">{{ $t("rndTitle["+ nbr +"]") }}</div>
+    <div class="quotes">"{{ $t("quotes[" + nbr + "]") }}"</div>
+    <div class="rndName">- {{ $t("rndName[" + nbr + "]") }}</div>
+    <div class="rndTitle">{{ $t("rndTitle[" + nbr + "]") }}</div>
   </div>
 </template>
 
 <style>
-
 .quotes {
   text-align: center;
   font-style: italic;
@@ -42,5 +41,4 @@ let nbr = Math.floor(Math.random() * 2);
     align-items: center;
   }
 }
-
 </style>

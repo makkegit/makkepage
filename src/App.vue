@@ -3,7 +3,6 @@ import { RouterLink, RouterView } from "vue-router";
 import AboutMe from "@/components/AboutMe.vue";
 import SideBar from "./components/SideBar.vue";
 import LanguageBar from "./components/LanguageBar.vue";
-
 </script>
 
 <template>
@@ -55,7 +54,6 @@ a,
   color: rgb(85, 109, 200);
   transition: 0.4s;
 }
-
 
 @media (hover: hover) {
   a:hover {

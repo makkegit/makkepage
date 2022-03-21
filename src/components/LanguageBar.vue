@@ -2,15 +2,19 @@
 import { LOCALES } from "../i18n/locales";
 </script>
 <template>
-    <div class="sticky-language-bar">
-        <div class="languages-container">
-            <div v-bind:class="'languages ' + o.value" v-for="(o, i) in LOCALES">
-                <i v-on:click="$i18n.locale = o.value"> 
-                {{o.value}}
-                </i>
-            </div>
-        </div>
+  <div class="sticky-language-bar">
+    <div class="languages-container">
+      <div
+        v-bind:class="'languages ' + o.value"
+        v-bind:key="i"
+        v-for="(o, i) in LOCALES"
+      >
+        <i v-on:click="$i18n.locale = o.value">
+          {{ o.value }}
+        </i>
+      </div>
     </div>
+  </div>
 </template>
 
 <style scoped>
@@ -30,8 +34,8 @@ import { LOCALES } from "../i18n/locales";
   flex-wrap: wrap;
 }
 
-.languages {  
-  flex: 1;  
+.languages {
+  flex: 1;
   margin: 0.5rem;
   font-size: 1.5rem;
   padding: 0.2rem;
@@ -48,5 +52,4 @@ import { LOCALES } from "../i18n/locales";
   background-color: #002f6c;
   color: #ffffff;
 }
-
 </style>

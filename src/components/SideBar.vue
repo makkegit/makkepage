@@ -1,28 +1,28 @@
 <script setup lang="ts">
-import { openWindow } from "@/utils/UtilFunctions" 
+import { openWindow } from "@/utils/UtilFunctions";
 </script>
 
 <template>
-<div class="sticky-media-bar">
-  <div class="social-container">
-    <div class="icons github" v-on:click="openWindow('https://github.com/makkegit')">
-      <a
-        class="gh"
-        aria-label="Github - Markus Hakala"
+  <div class="sticky-media-bar">
+    <div class="social-container">
+      <div
+        class="icons github"
+        v-on:click="openWindow('https://github.com/makkegit')"
       >
-        <i class="fa fa-github"></i>
-      </a>
-    </div>
-    <div class="icons linkedin" v-on:click="openWindow('https://www.linkedin.com/in/makkein')">
-      <a
-        class="li"
-        aria-label="Linkedin - Markus Hakala"
+        <a class="gh" aria-label="Github - Markus Hakala">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <div
+        class="icons linkedin"
+        v-on:click="openWindow('https://www.linkedin.com/in/makkein')"
       >
-        <i class="fa fa-linkedin"></i>
-      </a>
+        <a class="li" aria-label="Linkedin - Markus Hakala">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <style scoped>
@@ -63,5 +63,4 @@ import { openWindow } from "@/utils/UtilFunctions"
 i {
   color: white;
 }
-
 </style>

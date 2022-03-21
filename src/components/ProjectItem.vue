@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import type { Project } from "@/utils/Project";
-import { openWindow } from "@/utils/UtilFunctions" 
+import { openWindow } from "@/utils/UtilFunctions";
 
 defineProps<{
   project: Project;
 }>();
 </script>
 <template>
-  <div class="item" v-on:click="openWindow(project.link)" style="cursor: pointer;" >
+  <div
+    class="item"
+    v-on:click="openWindow(project.link)"
+    style="cursor: pointer"
+  >
     <i>
       <slot name="icon"></slot>
     </i>
@@ -139,4 +143,3 @@ h3 {
   }
 }
 </style>
-
