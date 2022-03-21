@@ -1,5 +1,5 @@
 <script setup lang="ts">
-let nbr = Math.floor(Math.random() * 2);
+let nbr = Math.floor(Math.random() * 4);
 </script>
 <template>
   <div class="itsme">

@@ -2,7 +2,7 @@
     "me": "Me",
     "me_name": "Markus Hakala",
     "me_desc": "Software developer",
-    "quotes": ["Makes awesome coffee! ☕", "WTF? Oh, you did it like that. Or...", "Haven't seen this kind of code before", "You cannot find a better teammate"],
+    "quotes": ["Makes awesome coffee! ☕", "WTF? Oh, you implemented it like that. Or...", "Haven't seen this kind of code before", "Good job"],
     "rndName": ["J. Doe", "C. Coderholm", "P. Programmersson", "C. Customering", "M. Managerald"],
     "rndTitle": ["Better coder", "Coder", "Software developer", "Really long and cool title"],
     "projects": "Projects",
