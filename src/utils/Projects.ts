@@ -26,7 +26,7 @@ export const PROJECT1 = new Project(
 export const PROJECT2 = new Project(
   "Makke page",
   "p2_desc",
-  "https://github.com/makkegit/APWebServer",
+  "https://github.com/makkegit/makkepage",
   "project2_img",
   project2_stack
 );
