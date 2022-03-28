@@ -41,6 +41,7 @@ import { LOCALES } from "../i18n/locales";
   padding: 0.2rem;
   width: 1.5em;
   border-radius: 5%;
+  cursor: pointer;
 }
 
 .fin {

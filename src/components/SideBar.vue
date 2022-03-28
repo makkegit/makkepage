@@ -50,6 +50,7 @@ import { openWindow } from "@/utils/UtilFunctions";
   padding: 0.5rem;
   width: 100%;
   border-radius: 10%;
+  cursor: pointer;
 }
 
 .linkedin {
